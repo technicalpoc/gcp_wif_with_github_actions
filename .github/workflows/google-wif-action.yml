@@ -19,7 +19,7 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           workload_identity_provider: 'projects/488125273857/locations/global/workloadIdentityPools/wif-github-pool/providers/wif-github-provider'
-          service_account: 'wrong_wif-test-sa@rk-poc-project.iam.gserviceaccount.com'
+          service_account: 'wif-test-sa@rk-poc-project.iam.gserviceaccount.com'
       # Install gcloud, `setup-gcloud` automatically picks up authentication from `auth`.
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v1'
